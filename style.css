@@ -7,6 +7,17 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -34,6 +45,39 @@ section{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+}
+
+.trans-wid{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom-width: 20px;
+    padding-bottom: 30px;
+}
+
+@media(max-width: 480px){
+    .trans-wid{
+        padding-left: 0px;
+    }
+}
+
+.width-mid{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+
+/* .reg-mid{
+    margin-left: auto !important;
+    margin-right: auto !important;
+} */
+
+
+@media(min-width: 860px){
+
+    .reg-mid{
+        margin-left: 180px !important;
+    }
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -99,6 +143,23 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+.right{
+    float: right;
+    overflow: hidden;
+}
+
+.logo-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  @media(max-width: 500px){
+    .mobile-logo{
+      height: 80px !important;
+    }
+  }
+
+
 /* navbar styling */
 .navbar{
     position: static;
@@ -107,6 +168,11 @@ section .title::after{
     padding: 5px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+}
+
+.navbar-brand{
+    color: #ffffff !important;
+    font-weight: 500 !important;
 }
 .navbar.sticky{
     padding: 30px 0;
@@ -192,11 +258,12 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/8.jpg") no-repeat center;
+    background: url("images/8.jpg") ;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -205,7 +272,7 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: darkblue;
+    background: #031446;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
@@ -238,7 +305,7 @@ section .title::after{
   color: white;
   opacity: 1;
   font-size: 90px ;
-  font-weight: : 600;
+  font-weight:  600;
 }
 #home > div > div > b > div > p > span{
   font-size: 30px;
@@ -269,6 +336,12 @@ section .title::after{
 .about .about-content .right{
     width: 55%;
 }
+
+.text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
@@ -282,7 +355,7 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: darkblue;
+    background: #031446;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -326,7 +399,7 @@ section .title::after{
 }
 .abou .about-content .right a{
     display: inline-block;
-    background: darkblue;
+    background: #031446;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -370,7 +443,7 @@ section .title::after{
 }
 .abo .about-content .right a{
     display: inline-block;
-    background: darkblue;
+    background: #031446;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -457,7 +530,7 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: darkblue;
+    background: #031446;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -612,6 +685,43 @@ section .title::after{
     background: none;
 }
 
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.info-sub{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media(min-width: 480px){
+    .responsive{
+        display: none;
+    }
+}
+
+@media(max-width : 720px){
+    .nonvis{
+        display: none;
+    }
+}
+
+@media(min-width: 720px){
+    .resnav{
+        float: right !important;
+    }
+}
+
 
 
 /* footer section styling */
@@ -760,12 +870,12 @@ footer span a:hover{
     .menu-btn i.active:before{
         content: "\f00d";
     }
-    .home{
+    /* .home{
         display: flex;
         background: url("images/8.jpg") ;
         background-position: center;
         background-size: 900px 600px;
-    }
+    } */
 
     #home > div > div > b > div > p{
         font-size: 60px;
@@ -789,7 +899,7 @@ footer span a:hover{
     }
 }
 
-@media (max-width: 500px) {
+@media(max-width: 500px) {
     #home > div > div > b > div > p{
         font-size: 50px;
     }
@@ -805,8 +915,8 @@ footer span a:hover{
     .home{
         display: flex;
         background: url("images/8.jpg") ;
-        background-position: center;
-        background-size: 500px 300px;
+        background-position: 15% 65%;
+        background-size: cover;
     }
 
     .about .about-content .right .text,
