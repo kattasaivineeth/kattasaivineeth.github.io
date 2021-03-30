@@ -14,7 +14,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 
@@ -65,20 +65,20 @@ section{
 }
 
 .width-mid{
-    margin-left: auto !important; 
+    margin-left: auto !important;
     margin-right: auto !important;
 }
 
 
 
 /* .reg-mid{
-    margin-left: auto !important; 
+    margin-left: auto !important;
     margin-right: auto !important;
 } */
 
 
 @media(min-width: 860px){
-   
+
     .reg-mid{
         margin-left: 180px !important;
     }
@@ -156,13 +156,13 @@ section .title::after{
     height: 60px;
     width: 60px;
   }
-  
+
   @media(max-width: 500px){
     .mobile-logo{
       height: 80px !important;
     }
   }
-  
+
 
 /* navbar styling */
 .navbar{
@@ -893,7 +893,7 @@ footer span a:hover{
     }
     #home > div > div > b > div > p > span{
       font-size: 20px;
-     
+
 
     }
       #home > div > div > b > div > p > span:nth-child(3){
@@ -927,7 +927,7 @@ footer span a:hover{
 @media(max-width: 500px) {
     #home > div > div > b > div > p{
         font-size: 50px;
-       
+
     }
     #home > div > div > b > div > p
 
